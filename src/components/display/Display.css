@@ -1,4 +1,5 @@
 .display {
   border: 2px solid green;
   padding: 10px 15px;
+  text-align: right;
 }
