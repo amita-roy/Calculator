@@ -2,74 +2,50 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## App is deployed with buildpack (mars/create-react-app) on heroku
+## Step Completed
 
-### Live link
-[Calculator](https://mycalculation.herokuapp.com/)
 
-## Available Scripts
+### Prepare the directory structure
 
-In the project directory, you can run:
+- Create a components directory in the src folder.
 
-### `npm start`
+- Create four files in there, each one representing one React component. For instance, the App component should be placed in src/components/App.js.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Components folder containing a folder for every component including js and css file for that specific component
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Implement the App component
 
-### `npm test`
+- App should render the Display and ButtonPanel component. HINT: at this moment App component is a stateless component as it is not fully implemented yet. In order to avoid linter errors remember to make it a functional component..
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- REMEMBER! JSX will not compile unless your function returns a single element. Wrap the children components with React.Fragment as this let you group the children components without adding extra nodes to the DOM.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Implement the Display component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- It should accept the result of the calculation as an incoming prop.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- The result prop should be a String.
 
-### `npm run eject`
+- The default value of the result prop should be 0.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Implement the Button component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- It should accept a button name as a prop.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- The button name prop should be a String.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Implement the ButtonPanel component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- It should render the calculator panel with all the buttons in the following groups: (use divs to divide buttons into groups)
 
-### Code Splitting
+- Group 1: AC, +/-, %, ÷
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Group 2: 7, 8, 9, X
 
-### Analyzing the Bundle Size
+- Group 3: 4, 5, 6, -
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Group 4: 1, 2, 3, +
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Group 5: 0, ., =
