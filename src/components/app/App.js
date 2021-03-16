@@ -8,13 +8,14 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = { calculation: 0 };
   }
 
   render() {
+    const { calculation } = this.state;
     return (
       <div className="app">
-        <Display />
+        <Display result={calculation} />
         <ButtonPanel />
       </div>
     );
