@@ -5,8 +5,25 @@ import './ButtonPanel.css';
 
 export default function ButtonPanel() {
   return (
-    <div>
-      <Button />
+    <div className="btn-panel">
+      <div className="row">
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+      </div>
+      <div className="row">
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+      </div>
+      <div className="row">
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+      </div>
     </div>
   );
 }
