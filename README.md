@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Calculator (Milestone 1)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## App is deployed with buildpack (mars/create-react-app) on heroku
+
+### Live link
+[Calculator](https://mycalculation.herokuapp.com/)
 
 ## Available Scripts
 
