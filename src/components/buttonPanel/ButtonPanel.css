@@ -1,0 +1,10 @@
+.btn-panel {
+  border: 2px solid yellow;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
