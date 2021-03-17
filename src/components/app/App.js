@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ButtonPanel from '../buttonPanel/ButtonPanel';
 import Display from '../display/Display';
-// import calculate from '../../logic/calculate';
 
 import './App.css';
 
@@ -12,9 +11,7 @@ class App extends Component {
     this.state = { calculation: 0 };
   }
 
-  handleInput = data => {
-    console.log(data);
-  }
+  handleInput = data => data
 
   render() {
     const { calculation } = this.state;
