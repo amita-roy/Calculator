@@ -89,8 +89,8 @@ const buttonOperations = (button, data) => {
   return { total, next, operation };
 };
 
-const calculate = (data, button) => {
-  buttonOperations(button, data);
+const calculate = (data, buttonName) => {
+  buttonOperations(buttonName, data);
 };
 
 export default calculate;
