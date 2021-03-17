@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="app">
         <Display result={calculation} />
-        <ButtonPanel handleInput={this.handleInput} />
+        <ButtonPanel handleInput={data => this.handleInput(data)} />
       </div>
     );
   }

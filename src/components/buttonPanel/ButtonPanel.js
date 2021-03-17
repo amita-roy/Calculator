@@ -13,24 +13,13 @@ const BUTTONGROUP = {
 };
 
 class ButtonPanel extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { name: null };
-  }
-
-  handleClick = name => {
-    this.setState({ name });
-  };
-
-  handleInput = () => {
+  handleInput = name => {
     const { handleInput } = this.props;
-    const { name } = this.state;
     handleInput(name);
   };
 
   renderButtons = group => group.map(item => (
-    <Button key={item} name={item} handleClick={this.handleClick} />
+    <Button key={item} name={item} handleClick={item => this.handleInput(item)} />
   ));
 
   render() {
@@ -46,7 +35,7 @@ class ButtonPanel extends Component {
         <div className="row">{this.renderButtons(group4)}</div>
         <div className="row">{this.renderButtons(group5)}</div>
         <div className="row">
-          <Button name="=" handleClick={this.handleClick} />
+          <Button name="=" handleClick={item => this.handleInput(item)} />
         </div>
       </div>
     );
