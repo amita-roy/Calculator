@@ -10,8 +10,8 @@ const operate = (num1, num2, operation) => {
       return Big(num1).div(Big(num2)).toString();
     case '+':
       return Big(num1).plus(Big(num2)).toString();
-    case '%':
-      return Big(num1).div(100).toString();
+    case '/':
+      return Big(num1).div(Big(num2)).toString();
     default:
       return 'Operation not possible';
   }
