@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ButtonPanel from '../buttonPanel/ButtonPanel';
 import Display from '../display/Display';
+// import calculate from '../../logic/calculate';
 
 import './App.css';
 
