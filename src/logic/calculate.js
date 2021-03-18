@@ -16,10 +16,10 @@ const buttonOperations = (button, data) => {
       }
       break;
     case '%':
-      if (next) {
-        next = operate(next, null, button);
+      if (next === null) {
+        total /= 100;
       } else {
-        total = operate(total, null, button);
+        next /= 100;
       }
       break;
     case '0':
@@ -69,6 +69,7 @@ const buttonOperations = (button, data) => {
       if (total !== null && next !== null && operation !== null) {
         total = operate(total, next, operation);
         next = null;
+        operation = null;
       }
       operation = button;
       break;
