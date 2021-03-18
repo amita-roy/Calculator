@@ -47,16 +47,11 @@ const buttonOperations = (button, data) => {
       }
       break;
     case '.':
-      if (!operation) {
-        if (!total) {
-          total = 0 + button;
-        } else if (!/[.]/.test(total)) {
-          total += button;
-        }
-      } else if (!next) {
-        next = 0 + button;
-      } else if (!/[.]/.test(next)) {
-        next += button;
+      if (!total) total = '0.';
+      if (!operation && !total.includes('.')) {
+        total += '.';
+      } else if (operation && !next.includes('.')) {
+        next += '.';
       }
       break;
     case '+':
