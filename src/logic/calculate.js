@@ -57,7 +57,7 @@ const buttonOperations = (button, data) => {
     case '+':
     case '-':
     case '÷':
-    case 'X':
+    case 'x':
       if (!total) {
         total = 0;
       }

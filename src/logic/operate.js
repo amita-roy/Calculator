@@ -6,7 +6,7 @@ const operate = (num1, num2, operation) => {
   switch (operation) {
     case '-':
       return numOne.minus(numTwo).toString();
-    case 'X':
+    case 'x':
       return numOne.times(numTwo).toString();
     case '+':
       return numOne.plus(numTwo).toString();
