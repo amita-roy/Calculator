@@ -1,17 +1,17 @@
 import Big from 'big.js';
 
 const operate = (num1, num2, operation) => {
+  const numOne = Big(num1);
+  const numTwo = Big(num2);
   switch (operation) {
     case '-':
-      return Big(num1).minus(Big(num2)).toString();
+      return numOne.minus(numTwo).toString();
     case 'X':
-      return Big(num1).times(Big(num2)).toString();
-    case '÷':
-      return Big(num1).div(Big(num2)).toString();
+      return numOne.times(numTwo).toString();
     case '+':
-      return Big(num1).plus(Big(num2)).toString();
-    case '/':
-      return Big(num1).div(Big(num2)).toString();
+      return numOne.plus(numTwo).toString();
+    case '÷':
+      return numTwo !== 0 ? numOne.div(numTwo).toString() : 'Invalid Operation';
     default:
       return 'Operation not possible';
   }

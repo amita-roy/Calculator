@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ButtonPanel from '../buttonPanel/ButtonPanel';
 import Display from '../display/Display';
-// import calculate from '../../logic/calculate';
+import calculate from '../../logic/calculate';
 
 import './App.css';
 
@@ -9,17 +9,22 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { calculation: 0 };
+    this.state = { total: null, next: null, operation: null };
   }
 
-  handleInput = data => data
+  handleClick = buttonName => {
+    const data = { ...this.state };
+    const calculation = calculate(data, buttonName);
+    this.setState({ ...calculation });
+    console.log(this.state); /* eslint no-console: "off" */
+  }
 
   render() {
-    const { calculation } = this.state;
+    const { total, next } = this.state;
     return (
       <div className="app">
-        <Display result={calculation} />
-        <ButtonPanel handleInput={data => this.handleInput(data)} />
+        <Display result={next || total} />
+        <ButtonPanel handleInput={data => this.handleClick(data)} />
       </div>
     );
   }

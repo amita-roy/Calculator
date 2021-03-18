@@ -63,10 +63,10 @@ const buttonOperations = (button, data) => {
     case '-':
     case '÷':
     case 'X':
-      if (!total) {
+      if (total === null) {
         total = 0;
       }
-      if (!total && !next && !operation) {
+      if (total !== null && next !== null && operation !== null) {
         total = operate(total, next, operation);
         next = null;
       }
@@ -74,10 +74,16 @@ const buttonOperations = (button, data) => {
       break;
 
     case '=':
-      if (!operation) {
+      if (operation === null) {
         total = operate(total, next, operation);
         next = null;
         operation = null;
+      }
+
+      if (total && next) {
+        total = operate(total, next, operation);
+        next = null;
+        operation = '=';
       }
       break;
     default:
@@ -89,8 +95,6 @@ const buttonOperations = (button, data) => {
   return { total, next, operation };
 };
 
-const calculate = (data, buttonName) => {
-  buttonOperations(buttonName, data);
-};
+const calculate = (data, buttonName) => buttonOperations(buttonName, data);
 
 export default calculate;
