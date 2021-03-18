@@ -16,14 +16,13 @@ class App extends Component {
     const data = { ...this.state };
     const calculation = calculate(data, buttonName);
     this.setState({ ...calculation });
-    console.log(this.state); /* eslint no-console: "off" */
   }
 
   render() {
     const { total, next } = this.state;
     return (
       <div className="app">
-        <Display result={next || total} />
+        <Display result={(next && next.toString()) || (total && total.toString())} />
         <ButtonPanel handleInput={data => this.handleClick(data)} />
       </div>
     );
