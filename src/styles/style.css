@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  width: 100vh;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #7c7871 20%, #868077 40%, #68615b 60%, #5f574e);
+}
