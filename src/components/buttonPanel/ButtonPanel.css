@@ -10,16 +10,20 @@
   width: 400px;
   margin: 0 -25px;
   box-shadow: 20px 22px 24px -1px rgb(26 26 26 / 70%);
+  height: 350px;
 }
 
 .btn-panel {
   width: 350px;
   margin: 0 auto;
   padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
