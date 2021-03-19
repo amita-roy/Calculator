@@ -19,9 +19,16 @@ class Button extends Component {
     }
   }
 
+  renderButton = name => {
+    if (name === '=') {
+      return <button type="button" id="equal" className="btn" onClick={this.handleClick}>{name}</button>;
+    }
+    return <button type="button" className="btn" onClick={this.handleClick}>{name}</button>;
+  }
+
   render() {
     const { name } = this.props;
-    return <button type="button" className="btn" onClick={this.handleClick}>{name}</button>;
+    return (this.renderButton(name));
   }
 }
 
