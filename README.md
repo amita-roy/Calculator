@@ -1,6 +1,9 @@
-# Calculator (Milestone 5)
+# Calculator
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+> Readme from milestones is containing the steps I have completed for each milestone.
+> This may not be the most efficient calculator but this is fulfilling all the project requirements and of course it does calculations
 
 ## App is deployed with buildpack (mars/create-react-app) on heroku
 
