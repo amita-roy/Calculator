@@ -1,6 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .app {
-  border: 3px solid palevioletred;
-  width: 600px;
-  margin: 0 auto;
-  padding: 10px;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #7c7871 20%, #868077 40%, #68615b 60%, #5f574e);
 }
