@@ -11,7 +11,7 @@ const operate = (num1, num2, operation) => {
     case '+':
       return numOne.plus(numTwo).toString();
     case '÷':
-      return num1 === '0' || num2 === '0' ? 'Division by zero error' : numOne.div(numTwo);
+      return num1 === '0' || num2 === '0' ? 'Division by zero error' : numOne.div(numTwo).toFixed(3);
     default:
       return 'Operation not possible';
   }
