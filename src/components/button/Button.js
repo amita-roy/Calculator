@@ -11,18 +11,33 @@ const buttonId = {
 };
 
 class Button extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isTapped: false };
+  }
+
+  reset = () => {
+    this.setState({ isTapped: false });
+  };
+
   handleClick = event => {
     event.preventDefault();
+    this.setState({ isTapped: true });
+
     const { handleClick, name } = this.props;
+
+    setTimeout(this.reset, 100);
+
     return handleClick(name);
   };
 
   render() {
     const { name } = this.props;
+    const { isTapped } = this.state;
     return (
       <button
         type="button"
-        className="button"
+        className={`button ${isTapped ? 'tapped' : ''}`}
         id={buttonId[name]}
         onClick={this.handleClick}
       >

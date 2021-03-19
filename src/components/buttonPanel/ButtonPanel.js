@@ -48,6 +48,7 @@ class ButtonPanel extends Component {
         </div>
         <Button
           name="="
+          key="equal"
           handleClick={item => this.handleClick(item)}
         />
       </div>

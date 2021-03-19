@@ -7,7 +7,7 @@
   border-radius: 100px;
 }
 
-.button:active {
+.tapped {
   box-shadow: inset 1px 3px 20px 0px rgb(0 0 0 / 54%);
   
 }
