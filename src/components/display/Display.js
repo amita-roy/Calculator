@@ -5,9 +5,12 @@ import './Display.css';
 
 const Display = props => {
   const { result } = props;
+  const length = result && result.length;
+  const size = length <= 11 ? '55px' : `${55 - (length * 2.5) / 2}px`;
+
   return (
     <div className="display">
-      <span>{result || '0'}</span>
+      <span style={{ fontSize: size }}>{result || '0'}</span>
     </div>
   );
 };
