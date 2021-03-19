@@ -23,7 +23,7 @@
 }
 
 .row {
-  flex: auto;
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
