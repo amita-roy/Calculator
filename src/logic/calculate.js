@@ -16,10 +16,10 @@ const buttonOperations = (button, data) => {
       }
       break;
     case '%':
-      if (next) {
-        next = operate(next, null, button);
+      if (!next) {
+        total /= 100;
       } else {
-        total = operate(total, null, button);
+        next /= 100;
       }
       break;
     case '0':
@@ -47,37 +47,48 @@ const buttonOperations = (button, data) => {
       }
       break;
     case '.':
-      if (!operation) {
-        if (!total) {
-          total = 0 + button;
-        } else if (!/[.]/.test(total)) {
-          total += button;
-        }
-      } else if (!next) {
-        next = 0 + button;
-      } else if (!/[.]/.test(next)) {
-        next += button;
+      if (!total) total = '0.';
+      if (!operation && !total.includes('.')) {
+        total += '.';
+      } else if (operation && !next.includes('.')) {
+        next += '.';
       }
       break;
     case '+':
     case '-':
     case '÷':
-    case 'X':
+    case 'x':
       if (!total) {
         total = 0;
       }
-      if (!total && !next && !operation) {
+
+      if (total && next && operation) {
         total = operate(total, next, operation);
         next = null;
+        operation = null;
       }
       operation = button;
       break;
 
     case '=':
+      if (!total && !next) {
+        return '0';
+      }
+
+      if (total && !next) {
+        return total;
+      }
+
       if (!operation) {
         total = operate(total, next, operation);
         next = null;
         operation = null;
+      }
+
+      if (total && next) {
+        total = operate(total, next, operation);
+        next = null;
+        operation = button;
       }
       break;
     default:
@@ -89,8 +100,6 @@ const buttonOperations = (button, data) => {
   return { total, next, operation };
 };
 
-const calculate = (data, buttonName) => {
-  buttonOperations(buttonName, data);
-};
+const calculate = (data, buttonName) => buttonOperations(buttonName, data);
 
 export default calculate;
