@@ -24,7 +24,7 @@ class App extends Component {
       <div className="app">
         <div className="calculator">
           <Display result={(next && next.toString()) || (total && total.toString())} />
-          <ButtonPanel handleInput={data => this.handleClick(data)} />
+          <ButtonPanel handleClick={data => this.handleClick(data)} />
         </div>
       </div>
     );

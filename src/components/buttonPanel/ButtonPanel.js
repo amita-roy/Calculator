@@ -13,16 +13,16 @@ const BUTTONGROUP = {
 };
 
 class ButtonPanel extends Component {
-  handleInput = name => {
-    const { handleInput } = this.props;
-    handleInput(name);
+  handleClick = name => {
+    const { handleClick } = this.props;
+    handleClick(name);
   };
 
   renderButtons = group => group.map(name => (
     <Button
       key={name}
       name={name}
-      handleClick={item => this.handleInput(item)}
+      handleClick={item => this.handleClick(item)}
     />
   ));
 
@@ -55,6 +55,6 @@ class ButtonPanel extends Component {
   }
 }
 
-ButtonPanel.propTypes = { handleInput: PropTypes.func.isRequired };
+ButtonPanel.propTypes = { handleClick: PropTypes.func.isRequired };
 
 export default ButtonPanel;
