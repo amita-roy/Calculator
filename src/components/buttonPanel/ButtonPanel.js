@@ -18,8 +18,12 @@ class ButtonPanel extends Component {
     handleInput(name);
   };
 
-  renderButtons = group => group.map(item => (
-    <Button key={item} name={item} handleClick={item => this.handleInput(item)} />
+  renderButtons = group => group.map(name => (
+    <Button
+      key={name}
+      name={name}
+      handleClick={item => this.handleInput(item)}
+    />
   ));
 
   render() {
@@ -36,12 +40,16 @@ class ButtonPanel extends Component {
               <div className="row">{this.renderButtons(group2)}</div>
               <div className="row">{this.renderButtons(group3)}</div>
               <div className="row">{this.renderButtons(group4)}</div>
-              <div className="row">{this.renderButtons(group5)}</div>
+              <div className="row" id="row5">
+                {this.renderButtons(group5)}
+              </div>
             </div>
           </div>
         </div>
-        <Button name="=" handleClick={item => this.handleInput(item)} />
-
+        <Button
+          name="="
+          handleClick={item => this.handleInput(item)}
+        />
       </div>
     );
   }

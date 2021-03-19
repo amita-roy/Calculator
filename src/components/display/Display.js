@@ -5,7 +5,11 @@ import './Display.css';
 
 const Display = props => {
   const { result } = props;
-  return <div className="display">{ result || '0' }</div>;
+  return (
+    <div className="display">
+      <span>{result || '0'}</span>
+    </div>
+  );
 };
 
 Display.defaultProps = {
