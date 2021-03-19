@@ -3,10 +3,17 @@
   color: rgb(206, 206, 206);
   font-size: 32px;
   border: none;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.button:active {
+  box-shadow: inset 1px 3px 20px 0px rgb(0 0 0 / 54%);
+  
 }
 
 .button:focus,
-.button-active {
+.button:active {
   outline: none;
 }
 
@@ -21,6 +28,7 @@
   color: white;
   box-shadow: inset 0 34px 18px -13px rgb(0 0 0 / 54%);
   outline: none;
+  border-radius: 0;
 }
 
 #clear.button {
