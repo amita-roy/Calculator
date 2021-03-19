@@ -7,9 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Live link
 [Calculator](https://mycalculation.herokuapp.com/)
 
-## Step Completed
+- ![Calculator](./screenshots/calculator.png)
 
-> in progress.....
 
 ### Prerequisites
 
@@ -20,8 +19,6 @@ Node
 - Clone this repository with: "git clone git@github.com:Amita-Roy/Calculator.git" using your terminal or command line.
 
 - Change to the project directory by entering cd 'calculator' in the terminal
-
-- Change branch with 'git checkout Milestone5' in the terminal to see the progress for this branch
 
 - Next run npm install to install the necessary dependencies
 
@@ -112,6 +109,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Thanks
+
+Dribbble for providing inspirational design
+Design by [Jaroslav Getman](https://dribbble.com/jaroslav_getman)
+
+https://dribbble.com/shots/2334270-004-Calculator/attachments/2334270-004-Calculator?mode=media
 
 
 ## 🤝 Contributing
