@@ -21,9 +21,12 @@ class Button extends Component {
 
   renderButton = name => {
     if (name === '=') {
-      return <button type="button" id="equal" className="btn" onClick={this.handleClick}>{name}</button>;
+      return <button type="button" id="equal" className="button" onClick={this.handleClick}>{name}</button>;
     }
-    return <button type="button" className="btn" onClick={this.handleClick}>{name}</button>;
+    if (name === 'AC') {
+      return <button type="button" id="AC" className="button" onClick={this.handleClick}>{name}</button>;
+    }
+    return <button type="button" className="button" onClick={this.handleClick}>{name}</button>;
   }
 
   render() {

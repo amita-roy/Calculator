@@ -71,6 +71,14 @@ const buttonOperations = (button, data) => {
       break;
 
     case '=':
+      if (!total && !next) {
+        return '0';
+      }
+
+      if (total && !next) {
+        return total;
+      }
+
       if (!operation) {
         total = operate(total, next, operation);
         next = null;
