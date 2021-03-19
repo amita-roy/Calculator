@@ -28,14 +28,18 @@ class ButtonPanel extends Component {
     } = BUTTONGROUP;
 
     return (
-      <div className="btn-panel">
-        <div className="row">{this.renderButtons(group1)}</div>
-        <div className="row">{this.renderButtons(group2)}</div>
-        <div className="row">{this.renderButtons(group3)}</div>
-        <div className="row">{this.renderButtons(group4)}</div>
-        <div className="row">{this.renderButtons(group5)}</div>
-        <div className="row">
-          <Button name="=" handleClick={item => this.handleInput(item)} />
+      <div className="btn-panel-wrapper">
+        <div className="bg-btn-panel">
+          <div className="btn-panel">
+            <div className="row">{this.renderButtons(group1)}</div>
+            <div className="row">{this.renderButtons(group2)}</div>
+            <div className="row">{this.renderButtons(group3)}</div>
+            <div className="row">{this.renderButtons(group4)}</div>
+            <div className="row">{this.renderButtons(group5)}</div>
+            <div className="row">
+              <Button name="=" handleClick={item => this.handleInput(item)} />
+            </div>
+          </div>
         </div>
       </div>
     );

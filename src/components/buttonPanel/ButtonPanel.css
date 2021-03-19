@@ -1,6 +1,21 @@
+.btn-panel-wrapper {
+  width: 350px;
+  background-color: #fbfbfb;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.bg-btn-panel {
+  background-color: rgba(22, 23, 29, 0.8);
+  width: 400px;
+  margin: 0 -25px;
+  box-shadow: 21px 29px 24px -10px rgba(26, 26, 26, 0.4);
+}
+
 .btn-panel {
-  border: 2px solid yellow;
-  margin-top: 20px;
+  width: 350px;
+  margin: 0 auto;
+  padding: 30px 15px;
 }
 
 .row {
