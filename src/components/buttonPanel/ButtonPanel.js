@@ -48,7 +48,7 @@ class ButtonPanel extends Component {
         </div>
         <Button
           name="="
-          handleClick={item => this.handleInput(item)}
+          handleClick={item => this.handleClick(item)}
         />
       </div>
     );
