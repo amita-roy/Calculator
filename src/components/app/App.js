@@ -22,8 +22,10 @@ class App extends Component {
     const { total, next } = this.state;
     return (
       <div className="app">
-        <Display result={(next && next.toString()) || (total && total.toString())} />
-        <ButtonPanel handleInput={data => this.handleClick(data)} />
+        <div className="calculator">
+          <Display result={(next && next.toString()) || (total && total.toString())} />
+          <ButtonPanel handleInput={data => this.handleClick(data)} />
+        </div>
       </div>
     );
   }
