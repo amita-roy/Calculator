@@ -1,0 +1,13 @@
+.display {
+  height: 130px;
+  background-color: #fbfbfb;
+  width: 350px;
+  margin: 0 auto;
+  color: rgb(92, 92, 92);
+  padding: 10px;
+  display: flex;
+  font-size: 55px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 300;
+}

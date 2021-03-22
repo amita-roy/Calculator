@@ -1,0 +1,42 @@
+.button {
+  background-color: transparent;
+  color: rgb(206, 206, 206);
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.tapped {
+  box-shadow: inset 1px 3px 20px 0 rgb(0 0 0 / 54%);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.button:focus,
+.button:active {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#equal.button {
+  height: 80px;
+  border: none;
+  width: 350px;
+  margin: 0 25px;
+  font-size: 48px;
+  background-color: transparent;
+  background-image: linear-gradient(148deg, #fd9564, #fb4825 85%);
+  color: white;
+  box-shadow: inset 0 34px 18px -13px rgb(0 0 0 / 54%);
+  outline: none;
+  border-radius: 0;
+}
+
+#clear.button {
+  font-size: 28px;
+}
+
+#zero.button {
+  grid-column: 2/3;
+}

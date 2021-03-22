@@ -1,6 +1,50 @@
-# Getting Started with Create React App
+# Calculator
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+> Readme from milestones is containing the steps I have completed for each milestone.
+> This may not be the most efficient calculator but this is fulfilling all the project requirements and of course it does calculations
+
+## App is deployed with buildpack (mars/create-react-app) on heroku
+
+### Live link
+[Calculator](https://mycalculation.herokuapp.com/)
+
+- ![Calculator](./screenshots/calculator.png)
+
+
+### Prerequisites
+
+Node
+
+**Setup**
+
+- Clone this repository with: "git clone git@github.com:Amita-Roy/Calculator.git" using your terminal or command line.
+
+- Change to the project directory by entering cd 'calculator' in the terminal
+
+- Next run npm install to install the necessary dependencies
+
+- Finally run the 'npm run build' and 'npm start' to start the application
+
+
+### Usage
+
+Start server with:
+
+```
+    npm start
+```
+
+
+## Author
+
+👤 **Amita Roy**
+
+- Github: [@Amita](https://github.com/Amita-Roy)
+- Twitter: [@Amita](https://twitter.com/AmitaRoy14)
+- Linkedin: [@Amita](https://www.linkedin.com/in/amita-roy-3b823b68/)
+
 
 ## Available Scripts
 
@@ -68,3 +112,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Thanks
+
+Dribbble for providing inspirational design
+Design by [Jaroslav Getman](https://dribbble.com/jaroslav_getman)
+
+https://dribbble.com/shots/2334270-004-Calculator/attachments/2334270-004-Calculator?mode=media
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
