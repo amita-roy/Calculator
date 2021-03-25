@@ -1,31 +1,25 @@
-import React, { useState } from 'react';
-import ButtonPanel from '../buttonPanel/ButtonPanel';
-import Display from '../display/Display';
-import calculate from '../../logic/calculate';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Navigation from '../navigation/Navigation';
+import Home from '../../pages/home';
+import Calculator from '../../pages/calculator';
+import Quotes from '../../pages/quotes';
 
 import './App.css';
 
-const App = () => {
-  const [total, setTotal] = useState(null);
-  const [next, setNext] = useState(null);
-  const [operation, setOperation] = useState(null);
-
-  const handleClick = buttonName => {
-    const data = { total, next, operation };
-    const calculation = calculate(data, buttonName);
-    setTotal(calculation.total);
-    setNext(calculation.next);
-    setOperation(calculation.operation);
-  };
-
-  return (
-    <div className="app">
-      <div className="calculator">
-        <Display result={(next && next.toString()) || (total && total.toString())} />
-        <ButtonPanel handleClick={data => handleClick(data)} />
-      </div>
+const App = () => (
+  <div className="app">
+    <div className="header">
+      <Navigation />
     </div>
-  );
-};
+    <div className="content">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/calculator" component={Calculator} />
+        <Route exact path="/quotes" component={Quotes} />
+      </Switch>
+    </div>
+  </div>
+);
 
 export default App;
