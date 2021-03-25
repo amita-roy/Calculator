@@ -8,6 +8,7 @@
 
 .home-content {
     flex: 1;
+    margin-right: 30px;
 }
 
 .illustration {
@@ -16,4 +17,39 @@
 
 .illustration img {
     width: 100%;
+}
+
+
+.left-text {
+    font-size: 20px;
+    color: rgb(206, 206, 206);
+    line-height: 35px;
+}
+
+.tagline {
+    font-size: 3rem;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .tagline {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .illustration {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .home-content {
+        order: 0;
+    }
 }

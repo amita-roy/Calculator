@@ -9,6 +9,6 @@
 }
 
 .app {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(135deg, #7c7871 15%, #868077 15%, #868077 45%, #68615b 45%, #68615b 80%, #5f574e 80%);
 }
