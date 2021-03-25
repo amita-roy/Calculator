@@ -6,10 +6,11 @@
     align-items: center;
 }
 
-.navigation p {
+.brand {
     flex: 1;
+    flex-shrink: 1;
     font-weight: 700;
-    font-size: 38px;
+    font-size: 2em;
     color: whitesmoke;
     text-shadow: 8px 6px 10px black;
 }
@@ -25,4 +26,28 @@
     font-size: 20px;
     font-weight: 400;
     margin-left: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-items {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+   .brand {
+       display: none;
+   }
+
+   .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   }
+
+   .nav-items a {
+       margin-left: 0;
+       font-size: 18px;
+   }
 }

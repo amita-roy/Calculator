@@ -1,3 +1,19 @@
 .home {
     padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.home-content {
+    flex: 1;
+}
+
+.illustration {
+    flex: 1;
+}
+
+.illustration img {
+    width: 100%;
 }
