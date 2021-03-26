@@ -39,7 +39,7 @@
 @media screen and (max-width: 500px) {
     .quote-box {
         height: auto;
-        width: fit-content;
+        width: auto;
         padding: 10px;
     }
 
