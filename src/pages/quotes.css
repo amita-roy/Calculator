@@ -37,20 +37,17 @@
 }
 
 @media screen and (max-width: 500px) {
-    .quote-box {
-        height: auto;
-        width: auto;
-        padding: 10px;
-    }
+  .quote-box {
+    height: auto;
+    width: auto;
+    padding: 10px;
+  }
 
-    .quote-box h2 {
-       
-        font-size: 22px;
-      }
-      
-    .quote-box p {
+  .quote-box h2 {
+    font-size: 22px;
+  }
+
+  .quote-box p {
     font-size: 16px;
-    }
-
-   
+  }
 }
