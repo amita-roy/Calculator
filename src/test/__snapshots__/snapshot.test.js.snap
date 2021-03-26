@@ -304,10 +304,10 @@ exports[`renders Quotes 1`] = `
     className="quote-box"
   >
     <h2>
-      Mathematics is no more computation than typing is literature.
+      Mathematics is a game played according to certain rules with meaningless marks on paper.
     </h2>
     <p>
-      ______ John Allen Paulos
+      ______ David Hilbert
     </p>
   </div>
 </div>

@@ -3,7 +3,7 @@ import QuotesData from '../data/quotes';
 import './quotes.css';
 
 const Quotes = () => {
-  const randomIndex = Math.floor(Math.random() * (QuotesData.length - 1) + 1);
+  const randomIndex = Math.floor(Math.random() * QuotesData.length);
   const randomQuote = QuotesData[randomIndex];
   return (
     <div className="quotes-page">

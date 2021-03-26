@@ -6,6 +6,7 @@ import Home from '../pages/home';
 import Quotes from '../pages/quotes';
 import CalculatorPage from '../pages/calculator';
 
+jest.mock('../data/quotes');
 const history = createBrowserHistory();
 
 it('renders App', () => {
@@ -31,8 +32,6 @@ it('renders Calculator Page', () => {
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
-
-jest.mock('../pages/quotes.js', () => jest.fn(() => ({ quote: 'Any Random Quote', author: 'QuoteAuthor' })));
 
 it('renders Quotes', () => {
   const tree = TestRenderer
