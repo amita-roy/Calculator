@@ -4,10 +4,4 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: calc(100vh - 80px);
-}
-
-.bottom-text {
-    color: rgb(211, 211, 211);
-    font-weight: 300;
 }
