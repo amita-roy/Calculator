@@ -102,4 +102,6 @@ const buttonOperations = (button, data) => {
 
 const calculate = (data, buttonName) => buttonOperations(buttonName, data);
 
+export { buttonOperations };
+
 export default calculate;

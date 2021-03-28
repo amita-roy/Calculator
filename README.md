@@ -1,16 +1,42 @@
-# Calculator
+# Calculator, Math Magicians Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 > Readme from milestones is containing the steps I have completed for each milestone.
-> This may not be the most efficient calculator but this is fulfilling all the project requirements and of course it does calculations
+
+> This may not be the most efficient calculator but this is fulfilling all the project requirements and of course it does calculations.
+
+> Branches Milestone 1 to 5 are for building Calculator.
+
+> math-magician branch is for adding the calculator to Math-Magicians website.
+
+> testing branch is for test Math-Magicians website.
+
+> I haven't added active status of tab in the navigation bar for time constraints.
 
 ## App is deployed with buildpack (mars/create-react-app) on heroku
 
 ### Live link
 [Calculator](https://mycalculation.herokuapp.com/)
 
+
+### Screenshots
+
 - ![Calculator](./screenshots/calculator.png)
+
+- ![Home Page](./screenshots/home.png)
+
+- ![Calculator Page](./screenshots/calculator-page.png)
+
+- ![Quotes Page](./screenshots/quotes.png)
+
+## Built With
+
+- React
+- Javascript
+- Jest
+- ESLint
+- Stylelint
 
 
 ### Prerequisites
@@ -34,6 +60,12 @@ Start server with:
 
 ```
     npm start
+```
+
+Run Test with:
+
+```
+    npm test
 ```
 
 

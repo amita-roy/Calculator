@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="header"
+  >
+    <div
+      className="navigation"
+    >
+      <p
+        className="brand"
+      >
+        Math-Magician
+      </p>
+      <nav
+        className="nav-items"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+        <a
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+        <a
+          href="/quotes"
+          onClick={[Function]}
+        >
+          Quotes
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="home"
+    >
+      <div
+        className="home-content"
+      >
+        <h3
+          className="tagline"
+        >
+          MATH AND SUCCESS ADD UP
+        </h3>
+        <p
+          className="left-text"
+        >
+          Mathematics is on the artistic side a creation of new rhythms, orders, designs, harmonies, and on the knowledge side, is a systematic study of various rhythms, orders.
+        </p>
+      </div>
+      <div
+        className="illustration"
+      >
+        <img
+          alt="illustration"
+          src="undraw_mathematics_4otb2.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders Calculator Page 1`] = `
+<div
+  className="calculator-page"
+>
+  <div
+    className="calculator"
+  >
+    <div
+      className="display"
+    >
+      <span
+        style={
+          Object {
+            "fontSize": "55px",
+          }
+        }
+      >
+        0
+      </span>
+    </div>
+    <div>
+      <div
+        className="btn-panel-wrapper"
+      >
+        <div
+          className="bg-btn-panel"
+        >
+          <div
+            className="btn-panel"
+          >
+            <div
+              className="row"
+            >
+              <button
+                className="button "
+                id="clear"
+                onClick={[Function]}
+                type="button"
+              >
+                AC
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                +/-
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                %
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                ÷
+              </button>
+            </div>
+            <div
+              className="row"
+            >
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                7
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                8
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                9
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                x
+              </button>
+            </div>
+            <div
+              className="row"
+            >
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                4
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                5
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                6
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                -
+              </button>
+            </div>
+            <div
+              className="row"
+            >
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                1
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                2
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                3
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                +
+              </button>
+            </div>
+            <div
+              className="row"
+              id="row5"
+            >
+              <button
+                className="button "
+                id="zero"
+                onClick={[Function]}
+                type="button"
+              >
+                0
+              </button>
+              <button
+                className="button "
+                onClick={[Function]}
+                type="button"
+              >
+                .
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="button "
+        id="equal"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders Home 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="home-content"
+  >
+    <h3
+      className="tagline"
+    >
+      MATH AND SUCCESS ADD UP
+    </h3>
+    <p
+      className="left-text"
+    >
+      Mathematics is on the artistic side a creation of new rhythms, orders, designs, harmonies, and on the knowledge side, is a systematic study of various rhythms, orders.
+    </p>
+  </div>
+  <div
+    className="illustration"
+  >
+    <img
+      alt="illustration"
+      src="undraw_mathematics_4otb2.svg"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders Quotes 1`] = `
+<div
+  className="quotes-page"
+>
+  <div
+    className="quote-box"
+  >
+    <h2>
+      Mathematics is a game played according to certain rules with meaningless marks on paper.
+    </h2>
+    <p>
+      ______ David Hilbert
+    </p>
+  </div>
+</div>
+`;
