@@ -27,7 +27,6 @@ describe('rendered Calculator', () => {
   test('has element with className calculator', () => {
     render(<Calculator />);
     const { container } = render(<div className="calculator" />);
-    // const element = screen.getByRole('display');
     expect(container.firstChild.classList.contains('calculator')).toBe(true);
   });
 });

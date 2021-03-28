@@ -47,3 +47,20 @@ it('should return the product of 3 numbers', () => {
 
   expect(newData).toStrictEqual({ next: null, operation: 'x', total: '8' });
 });
+
+describe('if user presses % key, calculate', () => {
+  it('should divide the last digit by 100', () => {
+    expect(Calculate({
+      total: 9, next: null, operation: null,
+    }, '%')).toEqual({
+      total: 0.09, next: null, operation: null,
+    });
+  });
+  it('should divide the last digit by 100', () => {
+    expect(Calculate({
+      total: 9, next: 6, operation: '+',
+    }, '%')).toEqual({
+      total: 9, next: 0.06, operation: '+',
+    });
+  });
+});
