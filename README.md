@@ -12,8 +12,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 > testing branch is for test Math-Magicians website.
 
-> I haven't added active status of tab in the navigation bar for time constraints.
-
 ## App is deployed with buildpack (mars/create-react-app) on heroku
 
 ### Live link
